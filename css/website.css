@@ -4,4 +4,20 @@ body {
 body>div.container {
   width: 80%;
   margin: auto;
+  
+}
+div.container-sub{
+  position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 1px solid black;
+    margin-right: 80px;
+
+}
+div.container-text{
+
+position: absolute;
+left:0px;
+margin-left: 80px;
+
 }
