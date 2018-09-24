@@ -6,12 +6,6 @@ body>div.container {
   margin: auto;
   
 }
-div.container-sub{
-  position: absolute;
-    right: 0px;
-    width: 300px;
-    border: 1px solid black;
-    margin-right: 80px;
 
 }
 div.container-text{
@@ -22,6 +16,9 @@ margin-left: 80px;
 
 }
 
+
+
+/*gallary */
 
 * {
     box-sizing: border-box;
@@ -57,7 +54,7 @@ body {
 }
 
 /* The expanding image container */
-.container {
+.containerGal {
     position: relative;
     display: none;
 }
@@ -80,3 +77,4 @@ body {
     font-size: 35px;
     cursor: pointer;
 }
+/* end of gallary */
