@@ -1,5 +1,27 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+
+}
+#body {
+   padding:10px;
+   padding-bottom:100px;   /* Height of the footer */
+}
+#footer {
+
+}
+
 body {
   padding-top: 70px;
+  
 }
 body>div.container {
   width: 80%;
@@ -15,11 +37,26 @@ left:0px;
 margin-left: 80px;
 
 }
-div.galcontainer{
 
-    
-    max-width:600px;
- 
+.footer {
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #efefef;
+  text-align: center;
+}
+
+
+div.slideShowCon{
+
+
+    margin: auto;
+    width: 50%;
+  
+    padding: 10px;
+
 }
 
 

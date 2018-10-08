@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>France - Intro </title>
+ <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <div class="title">FRANCE</div>
+  <div class="subtitle"> <a href="./index.html">Enter the main site</a>
+
+  
+  </div>
+</div>
+<style>
+@mixin center(){
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+html{
+  width:100%;
+  height: 100%;
+}
+body{
+  
+  background-image: url("mainbg.jpeg");
+  
+  
+}
+.container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.title{
+  font-weight: 800;
+  color: transparent;
+  font-size:120px;
+  background: url("http://maps.maphill.com/france/simple-maps/flag-map/flag-simple-map-of-france.jpg") ;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  line-height:90px;
+  letter-spacing: -8px;
+}
+.subtitle{
+  display: block;
+  text-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:20px;
+  
+}
+
+
+
+
+</style>
+<script>
+$(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 150;
+    traY = ((4 * mouseY) / 570) + 150;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+});
+</script>
+</body>
+</html>
