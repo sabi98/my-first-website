@@ -21,7 +21,10 @@ body {
   
 }
 
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    
+    color: #0055A4; /*France flag colour */
+}
 
 div.container-text{
 
@@ -37,13 +40,19 @@ padding-top:70px;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 10px;
-  background-color: #efefef;
+  padding: 8px;
+  background-color: #0055A4;
+  color: white;
   text-align: center;
   width:100%;
 }
 
-
+.navbar {
+    
+    
+    margin-bottom: 0px;
+    
+}
 div.slideShowCon{
 
 
